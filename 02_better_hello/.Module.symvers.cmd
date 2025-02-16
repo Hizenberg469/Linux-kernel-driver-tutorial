@@ -1,1 +1,0 @@
-cmd_/home/device-driver/02_better_hello/Module.symvers :=  sed 's/ko$$/o/'  /home/device-driver/02_better_hello/modules.order | scripts/mod/modpost -m      -o /home/device-driver/02_better_hello/Module.symvers -e -i Module.symvers -T - 
