@@ -1,0 +1,24 @@
+-> /proc/devices: 
+    It contains the character and block devices
+    with their major number.
+
+-> Why character devices are called character devices?
+    Because the read/write operation done is in size of
+    byte.
+
+-> Why block devices are called block devices?
+    Because the read/write operation done is in size of
+    block.
+
+-> To read bytes of a devices
+    use:
+    hexdump /dev/<device_name> 
+
+    to see only few bytes 
+    Use:
+    hexdump /dev/<device_name> | head
+
+-> To create a new device file
+    Use:
+    mknod <device-name> <type of device 'c' or 'b'> <major-num> <minor-num>
+    
