@@ -21,4 +21,15 @@
 -> To create a new device file
     Use:
     mknod <device-name> <type of device 'c' or 'b'> <major-num> <minor-num>
-    
+
+-> /dev/*:
+    this file basically contains virtual files which act as a 
+    interface between the device driver in kernel space and
+    the user space, which allow the control of the device from
+    user space.
+
+-> The link between the driver and the device file is made over
+    the major and minor number of the device file rather than 
+    name of the device file. So, if I associate a custom made
+    device file with driver using same major and minor number.
+    I can access the same device using that file.
